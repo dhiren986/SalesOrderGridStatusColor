@@ -14,7 +14,7 @@
 			<button name="add">
 				<url path="*/*/new"/>
 				<class>primary</class>
-				<label translate="true">Add new Contactus</label>
+				<label translate="true">Add new</label>
 			</button>
 		</buttons>
 	</settings>
@@ -79,7 +79,31 @@
 		<column name="name">
 			<settings>
 				<filter>text</filter>
-				<label translate="true">name</label>
+				<label translate="true">Name</label>
+				<editor>
+					<editorType>text</editorType>
+					<validation>
+						<rule name="required-entry" xsi:type="boolean">false</rule>
+					</validation>
+				</editor>
+			</settings>
+		</column>
+		<column name="email">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">Email</label>
+				<editor>
+					<editorType>text</editorType>
+					<validation>
+						<rule name="required-entry" xsi:type="boolean">false</rule>
+					</validation>
+				</editor>
+			</settings>
+		</column>
+		<column name="telephone">
+			<settings>
+				<filter>text</filter>
+				<label translate="true">Telephone</label>
 				<editor>
 					<editorType>text</editorType>
 					<validation>
@@ -95,29 +119,5 @@
 				<resizeDefaultWidth>107</resizeDefaultWidth>
 			</settings>
 		</actionsColumn>
-		<column name="telephone">
-			<settings>
-				<filter>text</filter>
-				<label translate="true">telephone</label>
-				<editor>
-					<editorType>text</editorType>
-					<validation>
-						<rule name="required-entry" xsi:type="boolean">false</rule>
-					</validation>
-				</editor>
-			</settings>
-		</column>
-		<column name="email">
-			<settings>
-				<filter>text</filter>
-				<label translate="true">email</label>
-				<editor>
-					<editorType>text</editorType>
-					<validation>
-						<rule name="required-entry" xsi:type="boolean">false</rule>
-					</validation>
-				</editor>
-			</settings>
-		</column>
 	</columns>
 </listing>
