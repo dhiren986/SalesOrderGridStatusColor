@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route url="/V1/khodal-contactsus/contactus" method="POST">
+		<service class="Khodal\Contactsus\Api\ContactusRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Khodal_Contactsus::Contactus_save"/>
+		</resources>
+	</route>
+	<route url="/V1/khodal-contactsus/contactus/search" method="GET">
+		<service class="Khodal\Contactsus\Api\ContactusRepositoryInterface" method="getList"/>
+		<resources>
+			<resource ref="Khodal_Contactsus::Contactus_view"/>
+		</resources>
+	</route>
+	<route url="/V1/khodal-contactsus/contactus/:contactusId" method="GET">
+		<service class="Khodal\Contactsus\Api\ContactusRepositoryInterface" method="get"/>
+		<resources>
+			<resource ref="Khodal_Contactsus::Contactus_view"/>
+		</resources>
+	</route>
+	<route url="/V1/khodal-contactsus/contactus/:contactusId" method="PUT">
+		<service class="Khodal\Contactsus\Api\ContactusRepositoryInterface" method="save"/>
+		<resources>
+			<resource ref="Khodal_Contactsus::Contactus_update"/>
+		</resources>
+	</route>
+	<route url="/V1/khodal-contactsus/contactus/:contactusId" method="DELETE">
+		<service class="Khodal\Contactsus\Api\ContactusRepositoryInterface" method="deleteById"/>
+		<resources>
+			<resource ref="Khodal_Contactsus::Contactus_delete"/>
+		</resources>
+	</route>
+</routes>
