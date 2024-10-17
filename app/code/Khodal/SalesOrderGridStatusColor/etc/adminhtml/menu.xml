@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of the Khodal_SalesOrderGridStatusColor package.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this package
+ * to newer versions in the future.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Khodal_SalesOrderGridStatusColor::menu_section" title="Order Grid Status Color" module="Khodal_SalesOrderGridStatusColor" sortOrder="20" parent="Magento_Sales::sales" resource="Khodal_SalesOrderGridStatusColor::menu_section"/>
+        <add id="Khodal_SalesOrderGridStatusColor::menu_config" title="Manage Settings" module="Khodal_SalesOrderGridStatusColor" sortOrder="20" parent="Khodal_SalesOrderGridStatusColor::menu_section" action="adminhtml/system_config/edit/section/khodal_salesordergridstatuscolor" resource="Khodal_SalesOrderGridStatusColor::menu_config" />
+    </menu>
+</config>
