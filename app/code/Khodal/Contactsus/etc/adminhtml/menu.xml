@@ -1,7 +1,0 @@
-<?xml version="1.0" ?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
-	<menu>
-		<add id="Khodal::top_level" title="Khodal" module="Khodal_Contactsus" sortOrder="9999" resource="Magento_Backend::content"/>
-		<add id="Khodal_Contactsus::khodal_contactsus_contactus" title="Contactus" module="Khodal_Contactsus" sortOrder="9999" resource="Magento_Backend::content" parent="Khodal::top_level" action="khodal_contactsus/contactus/index"/>
-	</menu>
-</config>

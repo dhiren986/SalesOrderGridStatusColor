@@ -1,0 +1,22 @@
+{
+  "name": "khodal/magento2-salesordergridstatuscolor",
+  "description": "Enhanced Sales Order Grid Status Color",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Dhiren Prajapati",
+      "email": "dhirenprajapati1986@gmail.com",
+      "homepage": "https://www.dhirenprajapati.com"
+    }
+  ],
+  "license": "GPL-3.0",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Khodal\\SalesOrderGridStatusColor\\": ""
+    }
+  }
+}
